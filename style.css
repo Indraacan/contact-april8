@@ -50,3 +50,7 @@
     display: table;
     clear: both;
   }
+  .posisi{
+      text-align: center;
+      padding-top: 10px;
+  }
