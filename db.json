@@ -23,6 +23,14 @@
       "phone": "1234124",
       "company": "qwerqwer",
       "id": 4
+    },
+    {
+      "name": "Riyo",
+      "address": "jl ketapang medan",
+      "email": "riyo@gmail.com",
+      "phone": "986464445454",
+      "company": "imp",
+      "id": 5
     }
   ]
 }

@@ -19,8 +19,8 @@ axios.get('http://localhost:3000/myContacts')
             <br>
             Company :${company}
             <br>
-                <button onclick="ubah(${id})">edit</button>
-                <button onclick="hapus(${id})">hapus</button>
+                <button onclick="ubah(${id})">Edit</button>
+                <button onclick="hapus(${id})">Hapus</button>
             </li>`;
             listsHTML.innerHTML += itemHTML;
         })

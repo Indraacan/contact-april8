@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
+
     <title>Document</title>
 </head>
+
 <body>
     <h1 style="text-align: center;">Contact To do</h1>
     <div class="container">
         <form action="" id="simpan">
-          <div class="row">
-            <div class="col-25">
-              <label for="name">Name</label>
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="name" name="firstname" placeholder="Your name..">
+                </div>
             </div>
-            <div class="col-75">
-              <input type="text" id="name" name="firstname" placeholder="Your name..">
+            <div class="row">
+                <div class="col-25">
+                    <label for="address">Address</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="address" name="" placeholder="Address">
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="address">Address</label>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="email" name="" placeholder="Your email">
+                </div>
             </div>
-            <div class="col-75">
-              <input type="text" id="address" name="" placeholder="Address">
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Phone Number</label>
+                </div>
+                <div class="col-75">
+                    <input type="number" id="phone" name="" placeholder="Your phone number">
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="email">Email</label>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Company</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="company" name="" placeholder="company">
+                </div>
             </div>
-            <div class="col-75">
-              <input type="text" id="email" name="" placeholder="Your email">
+            <div class="row">
+                <button type="submit" style="padding: 10px;">submit</button>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="email">Phone Number</label>
-            </div>
-            <div class="col-75">
-              <input type="number" id="phone" name="" placeholder="Your phone number">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="email">Company</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="company" name="" placeholder="company">
-            </div>
-          </div>
-          <div class="row">
-            <button type="submit">submit</button>
-          </div>
         </form>
-      </div>
+    </div>
     <!-- <form action="" id="simpan">
         <label for="name">Name </label><input type="text" name="name" id="name">
         <br>
@@ -70,13 +74,11 @@
     </form> -->
     <div id="contacts">
         <ol>
-            
+
         </ol>
     </div>
-
-    
-
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
