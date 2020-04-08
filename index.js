@@ -3,25 +3,24 @@ let data = [];
 axios.get('http://localhost:3000/myContacts')
     .then((response) => {
         console.log(response)
-        const listsHTML = document.querySelector("#contacts>ol")
+        const listsHTML = document.getElementById("dataList")
         data = response.data;
 
         response.data.forEach(item => {
             const {id, name, address, email, phone, company} = item;
-            const itemHTML = `<li>
-            Name : ${name}
-            <br>
-            Adrees : ${address}
-            <br>
-            Email : ${email}
-            <br>
-            Phone Number : ${phone}
-            <br>
-            Company :${company}
-            <br>
-                <button onclick="ubah(${id})">Edit</button>
-                <button onclick="hapus(${id})">Hapus</button>
-            </li>`;
+            const itemHTML = `
+            <tr>
+                <th id='dataList' scope="row">${id}</th>
+                <td>${name}</td>
+                <td>${address}</td>
+                <td>${phone}</td>
+                <td>${email}</td>
+                <td>${company}</td>
+                <td>
+                <button onclick="event.preventDefault(); changeContact(${id})" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+                <button onclick="deleteContact(${id})" type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+                </td>
+            </tr>`;
             listsHTML.innerHTML += itemHTML;
         })
     })
@@ -60,11 +59,11 @@ document.getElementById('simpan').addEventListener('submit',function(event){
     } )  
 })
 
-const hapus = id => {
+const deleteContact = id => {
     axios.delete(`http://localhost:3000/myContacts/${id}`)
 }
 
-const ubah = id => {
+const changeContact = id => {
     const contact = data.find(item => {
         return item.id === id
     })

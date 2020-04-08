@@ -1,36 +1,28 @@
 {
   "myContacts": [
     {
-      "name": "Julia",
-      "address": "konplek golden",
-      "email": "julia@gmail.com",
-      "phone": "097474774",
-      "company": "glint",
+      "name": "Indra",
+      "address": "Komp taman kota mas",
+      "email": "indra@gmailcom",
+      "phone": "0976464646",
+      "company": "ImpactByte",
       "id": 1
     },
     {
-      "id": 2,
-      "name": "Dolok Sagala",
-      "address": "Komp taman kota mas",
-      "email": "dolok@saribu.com",
-      "phone": "+6281224246767",
-      "company": "ImpactByte"
-    },
-    {
-      "name": "alex",
-      "address": "Jln. Raja Isa",
-      "email": "alex@gmail.com",
-      "phone": "1234124",
-      "company": "qwerqwer",
-      "id": 4
+      "name": "saya",
+      "address": "oke",
+      "email": "indra@gmail.com",
+      "phone": "08636464",
+      "company": "amazon",
+      "id": 2
     },
     {
       "name": "Riyo",
-      "address": "jl ketapang medan",
+      "address": "Jln. Raja Isa",
       "email": "riyo@gmail.com",
-      "phone": "986464445454",
-      "company": "imp",
-      "id": 5
+      "phone": "097865656565",
+      "company": "google",
+      "id": 3
     }
   ]
 }
